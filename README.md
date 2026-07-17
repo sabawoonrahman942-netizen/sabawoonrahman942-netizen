@@ -1,113 +1,49 @@
-## ⚡ Tech Stack
+<h1 align="left">📊 GitHub Analytics</h1>
+<p align="left">My GitHub journey in numbers</p>
+
+<hr/>
 
 <p align="center">
-
-<a href="https://www.python.org/" target="_blank">
-<img src="https://skillicons.dev/icons?i=python" height="55"/>
-</a>
-
-<a href="https://dev.mysql.com/doc/" target="_blank">
-<img src="https://skillicons.dev/icons?i=mysql" height="55"/>
-</a>
-
-<a href="https://www.postgresql.org/docs/" target="_blank">
-<img src="https://skillicons.dev/icons?i=postgresql" height="55"/>
-</a>
-
-<a href="https://www.mongodb.com/docs/" target="_blank">
-<img src="https://skillicons.dev/icons?i=mongodb" height="55"/>
-</a>
-
-<a href="https://git-scm.com/doc" target="_blank">
-<img src="https://skillicons.dev/icons?i=git" height="55"/>
-</a>
-
-<a href="https://docs.github.com/" target="_blank">
-<img src="https://skillicons.dev/icons?i=github" height="55"/>
-</a>
-
-<a href="https://docs.docker.com/" target="_blank">
-<img src="https://skillicons.dev/icons?i=docker" height="55"/>
-</a>
-
-<a href="https://aws.amazon.com/documentation/" target="_blank">
-<img src="https://skillicons.dev/icons?i=aws" height="55"/>
-</a>
-
-<a href="https://www.linux.org/pages/download/" target="_blank">
-<img src="https://skillicons.dev/icons?i=linux" height="55"/>
-</a>
-
-<a href="https://code.visualstudio.com/docs" target="_blank">
-<img src="https://skillicons.dev/icons?i=vscode" height="55"/>
-</a>
-
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=sabawoonrahman942-netizen&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true"/>
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sabawoonrahman942-netizen&layout=compact&theme=tokyonight&hide_border=true"/>
 </p>
 
----
-
-## 📊 Data Analytics
-
 <p align="center">
-
-<a href="https://pandas.pydata.org/docs/">
-<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
-</a>
-
-<a href="https://numpy.org/doc/">
-<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
-</a>
-
-<a href="https://matplotlib.org/stable/">
-<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge"/>
-</a>
-
-<a href="https://seaborn.pydata.org/">
-<img src="https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge"/>
-</a>
-
-<a href="https://plotly.com/python/">
-<img src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white"/>
-</a>
-
-<a href="https://learn.microsoft.com/power-bi/">
-<img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
-</a>
-
-<a href="https://help.tableau.com/">
-<img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white"/>
-</a>
-
+  <img width="98%" src="https://streak-stats.demolab.com?user=sabawoonrahman942-netizen&theme=tokyonight&hide_border=true"/>
 </p>
 
----
-
-## ⚙️ Data Engineering
+<p align="center">
+  <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=sabawoonrahman942-netizen&theme=tokyo-night&hide_border=true"/>
+</p>
 
 <p align="center">
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sabawoonrahman942-netizen&theme=tokyonight"/>
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sabawoonrahman942-netizen&theme=tokyonight"/>
+</p>
 
-<a href="https://spark.apache.org/docs/latest/">
-<img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white"/>
-</a>
+<p align="center">
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sabawoonrahman942-netizen&theme=tokyonight"/>
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sabawoonrahman942-netizen&theme=tokyonight"/>
+</p>
 
-<a href="https://airflow.apache.org/docs/">
-<img src="https://img.shields.io/badge/Apache_Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white"/>
-</a>
+<h2 align="left">🏆 GitHub Trophies</h2>
 
-<a href="https://kafka.apache.org/documentation/">
-<img src="https://img.shields.io/badge/Apache_Kafka-000000?style=for-the-badge&logo=apachekafka&logoColor=white"/>
-</a>
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=sabawoonrahman942-netizen&theme=algolia&no-frame=true&row=1&column=6&margin-w=15"/>
+</p>
 
-<a href="https://docs.aws.amazon.com/">
-<img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=FF9900"/>
-</a>
+<h2 align="left">🔥 Contribution Snake</h2>
 
-<a href="https://learn.microsoft.com/azure/data-factory/">
-<img src="https://img.shields.io/badge/Azure_Data_Factory-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white"/>
-</a>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/sabawoonrahman942-netizen/sabawoonrahman942-netizen/output/github-contribution-grid-snake-dark.svg"/>
+</p>
 
-<a href="https://cloud.google.com/bigquery/docs">
-<img src="https://img.shields.io/badge/BigQuery-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white"/>
-</a>
+<hr/>
 
+<p align="center">
+  <i>Continuous improvement is better than delayed perfection.</i>
+</p>
+
+<p align="right">
+  <sub>Last updated automatically by GitHub Actions</sub>
 </p>
