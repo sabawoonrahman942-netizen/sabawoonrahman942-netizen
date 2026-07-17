@@ -106,7 +106,6 @@
 <img src="https://img.shields.io/badge/Azure_Data_Factory-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white"/>
 </a>
 
-# 📊 GitHub Analytics
 
 <p align="center">
   <img src="./assets/dashboard.svg" alt="GitHub Analytics dashboard" width="100%"/>
