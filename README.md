@@ -46,8 +46,6 @@
 
 ---
 
-## 📊 Data Analytics
-
 <p align="center">
 
 <a href="https://pandas.pydata.org/docs/">
