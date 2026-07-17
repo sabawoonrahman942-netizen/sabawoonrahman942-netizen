@@ -1,11 +1,6 @@
 
 # 📊 GitHub Analytics
 
-This dashboard is **not a static image** — a GitHub Action in this repo
-(`.github/workflows/update-dashboard.yml`) pulls fresh data from the
-GitHub API every 6 hours (and on every push) and regenerates the SVG
-below, so anyone viewing this README always sees near‑real‑time stats.
-
 <p align="center">
   <img src="./assets/dashboard.svg" alt="GitHub Analytics dashboard" width="100%"/>
 </p>
