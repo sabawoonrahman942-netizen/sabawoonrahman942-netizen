@@ -5,20 +5,13 @@ Software Engineer • Data Analyst • Data Engineer
 </h3>
 
 <p align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&pause=1200&center=true&vCenter=true&width=900&lines=Software+Engineer;Data+Analyst;Data+Engineer;Python+Developer;SQL+Developer;Building+Scalable+Data+Pipelines;Always+Learning+New+Technologies"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=25&pause=1200&color=00C4FF&center=true&vCenter=true&random=false&width=900&lines=Software+Engineer;Data+Analyst;Data+Engineer;Python+Developer;SQL+Developer;Building+Scalable+Data+Pipelines;Always+Learning+New+Technologies"/>
 </p>
 
----
-
-## 👨‍💻 About Me
-
-- 🎓 **Software Engineering Student**
-- 📊 Passionate about **Data Analytics** and **Data Engineering**
-- 🐍 Python & SQL Developer
-- 📈 Building ETL Pipelines and Data Warehouses
-- ☁️ Learning AWS, Apache Spark, Kafka & Airflow
-- 💡 Interested in Machine Learning, Big Data and Cloud Computing
-- 🚀 Always building real-world projects and improving my skills
+<p align="center">
+I'm passionate about building scalable software, analyzing data, and designing modern data engineering solutions.
+I enjoy transforming raw data into meaningful insights and developing efficient, real-world applications.
+</p>
 
 ---
 
@@ -34,7 +27,7 @@ Software Engineer • Data Analyst • Data Engineer
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
-<a href="https://www.kaggle.com/">
+<a href="https://www.kaggle.com/fazlrahmansabawoon">
 <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white"/>
 </a>
 
@@ -44,12 +37,22 @@ Software Engineer • Data Analyst • Data Engineer
 
 </p>
 
+<p align="center">
+<img src="https://komarev.com/ghpvc/?username=sabawoonrahman942-netizen&label=Profile%20Views&style=for-the-badge&color=0e75b6"/>
+<img src="https://img.shields.io/github/followers/sabawoonrahman942-netizen?style=for-the-badge&logo=github"/>
+<img src="https://img.shields.io/github/stars/sabawoonrahman942-netizen?style=for-the-badge"/>
+</p>
+
 ---
 
-<p align="center">
-<img src="https://komarev.com/ghpvc/?username=sabawoonrahman942-netizen&label=Profile%20Views&color=0e75b6&style=for-the-badge"/>
-<img src="https://img.shields.io/github/followers/sabawoonrahman942-netizen?style=for-the-badge&logo=github"/>
-<img src="https://img.shields.io/github/stars/sabawoonrahman942-netizen?affiliations=OWNER&style=for-the-badge"/>
-</p>
+## 👨‍💻 About Me
+
+- 🎓 Software Engineering Student
+- 📊 Aspiring Data Analyst & Data Engineer
+- 🐍 Python & SQL Developer
+- ⚙️ Building ETL Pipelines and Data Warehouses
+- 📈 Passionate about Data Analytics & Business Intelligence
+- ☁️ Learning AWS, Apache Spark, Airflow, Kafka & Big Data Technologies
+- 🚀 Building real-world projects and continuously improving my skills
 
 ---
