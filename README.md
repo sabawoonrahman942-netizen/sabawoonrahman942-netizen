@@ -2,12 +2,12 @@
 <h3 align="center">Data Analyst • Data Engineer • Python Developer</h3>
 
 <p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&center=true&vCenter=true&width=700&lines=Data+Analyst;Data+Engineer;Python+Developer;SQL+Enthusiast;Building+Data+Pipelines;Always+Learning..." />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3500&pause=1000&color=00F7FF&center=true&vCenter=true&width=800&lines=Data+Analyst;Data+Engineer;Python+Developer;SQL+%7C+Python+%7C+Power+BI;Building+Scalable+Data+Pipelines;Always+Learning+New+Technologies" />
 </p>
 
 ---
 
-## 🌐 Connect with Me
+## 🌐 Connect With Me
 
 <p align="center">
 <a href="https://github.com/sabawoonrahman942-netizen"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
@@ -18,18 +18,13 @@
 
 ---
 
-## 💻 Languages
+## ⚡ Tech Stack
 
 <p align="center">
-<img src="https://skillicons.dev/icons?i=python,java,cpp,c,js,html,css,bash,mysql,postgresql,mongodb"/>
+<img src="https://skillicons.dev/icons?i=python,java,cpp,c,js,ts,html,css,bash,git,github,linux,vscode,docker,aws,mysql,postgresql,mongodb"/>
 </p>
 
----
-
-## 📊 Data Analytics
-
 <p align="center">
-<img src="https://skillicons.dev/icons?i=python"/>
 <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
 <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
 <img src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge"/>
@@ -37,74 +32,104 @@
 <img src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white"/>
 <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
 <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white"/>
-</p>
-
----
-
-## ⚙️ Data Engineering
-
-<p align="center">
-<img src="https://skillicons.dev/icons?i=docker,linux,git,github,aws"/>
 <img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white"/>
-<img src="https://img.shields.io/badge/Apache_Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white"/>
-<img src="https://img.shields.io/badge/Apache_Kafka-000000?style=for-the-badge&logo=apachekafka&logoColor=white"/>
-<img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white"/>
+<img src="https://img.shields.io/badge/Kafka-000000?style=for-the-badge&logo=apachekafka&logoColor=white"/>
 </p>
 
 ---
 
-## 📈 GitHub Stats
+# 📊 GitHub Analytics
 
 <p align="center">
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=sabawoonrahman942-netizen&show_icons=true&theme=tokyonight&hide_border=true"/>
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sabawoonrahman942-netizen&layout=compact&theme=tokyonight&hide_border=true"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=sabawoonrahman942-netizen&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sabawoonrahman942-netizen&layout=compact&theme=radical&hide_border=true"/>
 </p>
-
----
-
-## 🔥 GitHub Streak
 
 <p align="center">
-<img src="https://streak-stats.demolab.com?user=sabawoonrahman942-netizen&theme=tokyonight&hide_border=true"/>
+<img width="70%" src="https://streak-stats.demolab.com?user=sabawoonrahman942-netizen&theme=radical&hide_border=true"/>
 </p>
-
----
-
-## 📊 Contribution Graph
 
 <p align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=sabawoonrahman942-netizen&theme=tokyo-night&hide_border=true"/>
+<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=sabawoonrahman942-netizen&theme=react-dark&hide_border=true"/>
 </p>
 
 ---
 
-## 🏆 GitHub Trophies
+# 🏆 GitHub Trophies
 
 <p align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=sabawoonrahman942-netizen&theme=tokyonight&no-frame=true&margin-w=10&margin-h=10"/>
+<img src="https://github-profile-trophy.vercel.app/?username=sabawoonrahman942-netizen&theme=algolia&no-frame=true&column=7"/>
 </p>
 
 ---
 
-## 🚀 Current Focus
+# 📌 Featured Projects
 
-- Data Analysis
-- Data Engineering
-- ETL Pipelines
-- SQL Optimization
-- Apache Spark
-- Apache Airflow
-- Kafka
-- AWS Cloud
-- Power BI
-- Tableau
-- Machine Learning
+| Project | Description |
+|----------|-------------|
+| 📊 SQL Portfolio | Advanced SQL Queries & Database Projects |
+| 🐍 Python Projects | Python Automation & Data Analysis |
+| 📈 Power BI Dashboards | Interactive Business Dashboards |
+| 📉 Tableau Dashboards | Data Visualization |
+| ⚙️ ETL Pipelines | End-to-End ETL Workflows |
+| 🔥 PySpark Projects | Big Data Processing |
+| 🌊 Apache Airflow | Workflow Automation |
+| 📨 Kafka Projects | Real-Time Streaming |
+| ☁️ AWS Projects | Cloud Data Engineering |
+
+---
+
+# 📚 Currently Learning
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/Data_Engineering-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Apache_Spark-orange?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Kafka-black?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/AWS-yellow?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Airflow-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge"/>
+
+</p>
+
+---
+
+# 📈 Visitor Count
+
+<p align="center">
+<img src="https://komarev.com/ghpvc/?username=sabawoonrahman942-netizen&style=for-the-badge&color=blue"/>
+</p>
+
+---
+
+# ⚡ Coding Activity
+
+<p align="center">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sabawoonrahman942-netizen&theme=github_dark"/>
+</p>
+
+<p align="center">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sabawoonrahman942-netizen&theme=github_dark"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sabawoonrahman942-netizen&theme=github_dark"/>
+</p>
+
+<p align="center">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sabawoonrahman942-netizen&theme=github_dark"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=sabawoonrahman942-netizen&theme=github_dark&utcOffset=3"/>
+</p>
 
 ---
 
 <p align="center">
-<img src="https://komarev.com/ghpvc/?username=sabawoonrahman942-netizen&label=Profile%20Views&color=0e75b6&style=for-the-badge"/>
+<img src="https://raw.githubusercontent.com/sabawoonrahman942-netizen/sabawoonrahman942-netizen/output/github-contribution-grid-snake-dark.svg"/>
 </p>
 
-<h3 align="center">⭐ Thanks for visiting my profile ⭐</h3>
+---
+
+<h2 align="center">💙 Thanks for Visiting My Profile 💙</h2>
+
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6e40c9,100:00c6ff&height=120&section=footer"/>
+</p>
