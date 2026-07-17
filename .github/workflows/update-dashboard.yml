@@ -1,0 +1,43 @@
+name: Update GitHub Analytics Dashboard
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 6 hours
+  workflow_dispatch: {}       # lets you trigger it manually from the Actions tab
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch live GitHub data
+        env:
+          GH_TOKEN: ${{ secrets.STATS_TOKEN }}
+          GH_USERNAME: sabawoonrahman942-netizen
+        run: python scripts/fetch_stats.py
+
+      - name: Generate dashboard SVG
+        run: python scripts/generate_svg.py
+
+      - name: Commit updated dashboard
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/dashboard.svg data.json
+          git diff --quiet --cached || git commit -m "chore: refresh live dashboard stats"
+          git push
