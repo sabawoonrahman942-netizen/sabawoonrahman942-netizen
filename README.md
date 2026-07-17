@@ -1,8 +1,4 @@
 
-
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6e40c9,100:00c6ff&height=120&section=footer"/>
-</p>
 # 📊 GitHub Analytics
 
 This dashboard is **not a static image** — a GitHub Action in this repo
