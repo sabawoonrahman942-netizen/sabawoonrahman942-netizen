@@ -109,7 +109,7 @@
 </a>
 
 </p>  
-
+---
 
 <p align="center">
   <img src="./assets/dashboard.svg" alt="GitHub Analytics dashboard" width="1000%"/>
