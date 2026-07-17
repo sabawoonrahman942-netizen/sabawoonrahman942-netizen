@@ -1,49 +1,63 @@
-<h1 align="left">📊 GitHub Analytics</h1>
-<p align="left">My GitHub journey in numbers</p>
-
-<hr/>
+# 📊 GitHub Analytics
 
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=sabawoonrahman942-netizen&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true"/>
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sabawoonrahman942-netizen&layout=compact&theme=tokyonight&hide_border=true"/>
+  <img src="./assets/dashboard.svg" alt="GitHub Analytics dashboard" width="100%"/>
 </p>
+
+<br>
 
 <p align="center">
-  <img width="98%" src="https://streak-stats.demolab.com?user=sabawoonrahman942-netizen&theme=tokyonight&hide_border=true"/>
-</p>
 
-<p align="center">
-  <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=sabawoonrahman942-netizen&theme=tokyo-night&hide_border=true"/>
-</p>
+<a href="https://github.com/" target="_blank">
+<img src="https://skillicons.dev/icons?i=github" height="60" alt="GitHub"/>
+</a>
 
-<p align="center">
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sabawoonrahman942-netizen&theme=tokyonight"/>
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sabawoonrahman942-netizen&theme=tokyonight"/>
-</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-<p align="center">
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sabawoonrahman942-netizen&theme=tokyonight"/>
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sabawoonrahman942-netizen&theme=tokyonight"/>
-</p>
+<a href="https://git-scm.com/doc" target="_blank">
+<img src="https://skillicons.dev/icons?i=git" height="60" alt="Git"/>
+</a>
 
-<h2 align="left">🏆 GitHub Trophies</h2>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=sabawoonrahman942-netizen&theme=algolia&no-frame=true&row=1&column=6&margin-w=15"/>
-</p>
+<a href="https://docs.github.com/en/actions" target="_blank">
+<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions"/>
+</a>
 
-<h2 align="left">🔥 Contribution Snake</h2>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/sabawoonrahman942-netizen/sabawoonrahman942-netizen/output/github-contribution-grid-snake-dark.svg"/>
-</p>
+<a href="https://docs.docker.com/" target="_blank">
+<img src="https://skillicons.dev/icons?i=docker" height="60" alt="Docker"/>
+</a>
 
-<hr/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-<p align="center">
-  <i>Continuous improvement is better than delayed perfection.</i>
-</p>
+<a href="https://www.linux.org/pages/download/" target="_blank">
+<img src="https://skillicons.dev/icons?i=linux" height="60" alt="Linux"/>
+</a>
 
-<p align="right">
-  <sub>Last updated automatically by GitHub Actions</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://www.python.org/doc/" target="_blank">
+<img src="https://skillicons.dev/icons?i=python" height="60" alt="Python"/>
+</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://spark.apache.org/docs/latest/" target="_blank">
+<img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" alt="Apache Spark"/>
+</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://airflow.apache.org/docs/" target="_blank">
+<img src="https://img.shields.io/badge/Apache_Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white" alt="Apache Airflow"/>
+</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://aws.amazon.com/documentation/" target="_blank">
+<img src="https://skillicons.dev/icons?i=aws" height="60" alt="AWS"/>
+</a>
+
 </p>
