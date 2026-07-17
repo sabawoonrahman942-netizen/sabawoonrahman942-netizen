@@ -109,8 +109,8 @@
 </a>
 
 </p>  
-## 📊 GitHub Analytics
+
 
 <p align="center">
-  <img src="./assets/dashboard.svg" alt="GitHub Analytics dashboard" width="100%"/>
+  <img src="./assets/dashboard.svg" alt="GitHub Analytics dashboard" width="1000%"/>
 </p>
