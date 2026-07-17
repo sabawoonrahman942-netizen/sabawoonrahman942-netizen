@@ -1,118 +1,55 @@
-## ⚡ Tech Stack
+<h1 align="center">Hi 👋, I'm Fazl Rahman Sabawoon</h1>
+
+<h3 align="center">
+Software Engineer • Data Analyst • Data Engineer
+</h3>
+
+<p align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&pause=1200&center=true&vCenter=true&width=900&lines=Software+Engineer;Data+Analyst;Data+Engineer;Python+Developer;SQL+Developer;Building+Scalable+Data+Pipelines;Always+Learning+New+Technologies"/>
+</p>
+
+---
+
+## 👨‍💻 About Me
+
+- 🎓 **Software Engineering Student**
+- 📊 Passionate about **Data Analytics** and **Data Engineering**
+- 🐍 Python & SQL Developer
+- 📈 Building ETL Pipelines and Data Warehouses
+- ☁️ Learning AWS, Apache Spark, Kafka & Airflow
+- 💡 Interested in Machine Learning, Big Data and Cloud Computing
+- 🚀 Always building real-world projects and improving my skills
+
+---
+
+## 🌐 Connect With Me
 
 <p align="center">
 
-<a href="https://www.python.org/" target="_blank">
-<img src="https://skillicons.dev/icons?i=python" height="55"/>
+<a href="https://github.com/sabawoonrahman942-netizen">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
-<a href="https://dev.mysql.com/doc/" target="_blank">
-<img src="https://skillicons.dev/icons?i=mysql" height="55"/>
+<a href="https://www.linkedin.com/in/fazl-rahman-sabawoon-2a8578277/">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
-<a href="https://www.postgresql.org/docs/" target="_blank">
-<img src="https://skillicons.dev/icons?i=postgresql" height="55"/>
+<a href="https://www.kaggle.com/">
+<img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white"/>
 </a>
 
-<a href="https://www.mongodb.com/docs/" target="_blank">
-<img src="https://skillicons.dev/icons?i=mongodb" height="55"/>
-</a>
-
-<a href="https://git-scm.com/doc" target="_blank">
-<img src="https://skillicons.dev/icons?i=git" height="55"/>
-</a>
-
-<a href="https://docs.github.com/" target="_blank">
-<img src="https://skillicons.dev/icons?i=github" height="55"/>
-</a>
-
-<a href="https://docs.docker.com/" target="_blank">
-<img src="https://skillicons.dev/icons?i=docker" height="55"/>
-</a>
-
-<a href="https://aws.amazon.com/documentation/" target="_blank">
-<img src="https://skillicons.dev/icons?i=aws" height="55"/>
-</a>
-
-<a href="https://www.linux.org/pages/download/" target="_blank">
-<img src="https://skillicons.dev/icons?i=linux" height="55"/>
-</a>
-
-<a href="https://code.visualstudio.com/docs" target="_blank">
-<img src="https://skillicons.dev/icons?i=vscode" height="55"/>
+<a href="mailto:YOUR_EMAIL@gmail.com">
+<img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
 
 </p>
 
 ---
 
-## 📊 Data Analytics
-
 <p align="center">
-
-<a href="https://pandas.pydata.org/docs/">
-<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
-</a>
-
-<a href="https://numpy.org/doc/">
-<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
-</a>
-
-<a href="https://matplotlib.org/stable/">
-<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge"/>
-</a>
-
-<a href="https://seaborn.pydata.org/">
-<img src="https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge"/>
-</a>
-
-<a href="https://plotly.com/python/">
-<img src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white"/>
-</a>
-
-<a href="https://learn.microsoft.com/power-bi/">
-<img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
-</a>
-
-<a href="https://help.tableau.com/">
-<img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white"/>
-</a>
-
+<img src="https://komarev.com/ghpvc/?username=sabawoonrahman942-netizen&label=Profile%20Views&color=0e75b6&style=for-the-badge"/>
+<img src="https://img.shields.io/github/followers/sabawoonrahman942-netizen?style=for-the-badge&logo=github"/>
+<img src="https://img.shields.io/github/stars/sabawoonrahman942-netizen?affiliations=OWNER&style=for-the-badge"/>
 </p>
 
 ---
-
-## ⚙️ Data Engineering
-
-<p align="center">
-
-<a href="https://spark.apache.org/docs/latest/">
-<img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white"/>
-</a>
-
-<a href="https://airflow.apache.org/docs/">
-<img src="https://img.shields.io/badge/Apache_Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white"/>
-</a>
-
-<a href="https://kafka.apache.org/documentation/">
-<img src="https://img.shields.io/badge/Apache_Kafka-000000?style=for-the-badge&logo=apachekafka&logoColor=white"/>
-</a>
-
-<a href="https://docs.aws.amazon.com/">
-<img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=FF9900"/>
-</a>
-
-<a href="https://learn.microsoft.com/azure/data-factory/">
-<img src="https://img.shields.io/badge/Azure_Data_Factory-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white"/>
-</a>
-
-<a href="https://cloud.google.com/bigquery/docs">
-<img src="https://img.shields.io/badge/BigQuery-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white"/>
-</a>
-
-</p>
-# 📊 GitHub Analytics
-
-<p align="center">
-  <img src="./assets/dashboard.svg" alt="GitHub Analytics dashboard" width="100%"/>
-</p>
