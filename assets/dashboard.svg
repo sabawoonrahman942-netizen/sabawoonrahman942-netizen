@@ -29,7 +29,7 @@
         <text x="775" y="175" fill="#8b5cf6" font-size="16" font-weight="600" text-anchor="end">17</text>
         
         <text x="440" y="209" fill="#e6e6ef" font-size="15">Total Stars Earned</text>
-        <text x="775" y="209" fill="#eab308" font-size="16" font-weight="600" text-anchor="end">28</text>
+        <text x="775" y="209" fill="#eab308" font-size="16" font-weight="600" text-anchor="end">35</text>
         
         <text x="440" y="243" fill="#e6e6ef" font-size="15">Total Commits</text>
         <text x="775" y="243" fill="#22c55e" font-size="16" font-weight="600" text-anchor="end">108</text>
