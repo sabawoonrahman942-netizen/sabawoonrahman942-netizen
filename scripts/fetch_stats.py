@@ -36,6 +36,12 @@ def gql(query, variables=None):
     return data["data"]
 
 
+def rest_get(path, params=None):
+    r = requests.get(f"{REST_URL}{path}", headers=HEADERS, params=params, timeout=30)
+    r.raise_for_status()
+    return r.json()
+
+
 def get_profile_and_calendar():
     query = """
     query($login: String!) {
@@ -51,6 +57,7 @@ def get_profile_and_calendar():
           nodes {
             name
             stargazerCount
+            createdAt
             primaryLanguage { name }
             languages(first: 5, orderBy: {field: SIZE, direction: DESC}) {
               edges { size node { name } }
@@ -81,7 +88,7 @@ def compute_streaks(weeks):
             days.append((d["date"], d["contributionCount"]))
     days.sort()
 
-    longest = current = 0
+    longest = 0
     running = 0
     today = datetime.date.today()
 
@@ -115,6 +122,60 @@ def monthly_totals(weeks):
     return totals
 
 
+def fetch_issues_closed():
+    """REST search API: sadece kullanicinin actigi ve kapanmis issue sayisi."""
+    try:
+        data = rest_get("/search/issues", {"q": f"author:{USERNAME}+type:issue+state:closed"})
+        return data.get("total_count", 0)
+    except Exception:
+        return 0
+
+
+def fetch_contributors_count(repos, limit=6):
+    """En cok yildizli ilk N reponun benzersiz katkicilarini toplar (API maliyetini sinirlamak icin)."""
+    top = sorted(repos, key=lambda r: r["stargazerCount"], reverse=True)[:limit]
+    seen = set()
+    for r in top:
+        try:
+            contributors = rest_get(f"/repos/{USERNAME}/{r['name']}/contributors", {"per_page": 100})
+            for c in contributors:
+                if isinstance(c, dict) and c.get("login"):
+                    seen.add(c["login"])
+        except Exception:
+            continue
+    return max(len(seen), 1)
+
+
+MONTH_ABBR = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+
+def stars_last_12_months(repos):
+    """Son 12 ay icin kumulatif yildiz tahmini (repo olusturulma tarihine gore agirlikli).
+    GitHub'da gercek 'star history' endpoint'i olmadigi icin bu bir yaklasimdir;
+    toplam yildiz sayisi gercek ve dogrudur, aylik dagilim yaklasiktir."""
+    now = datetime.datetime.utcnow()
+    months = []
+    for i in range(11, -1, -1):
+        idx = now.month - i
+        y = now.year + (idx - 1) // 12
+        m = (idx - 1) % 12 + 1
+        months.append((y, m))
+    buckets = {f"{y}-{m:02d}": 0 for y, m in months}
+    for r in sorted(repos, key=lambda r: r["createdAt"]):
+        created = r["createdAt"][:7]
+        if created in buckets:
+            buckets[created] += r["stargazerCount"]
+    running, values = 0, []
+    for y, m in months:
+        running += buckets[f"{y}-{m:02d}"]
+        values.append(running)
+    real_total = sum(r["stargazerCount"] for r in repos)
+    if values and values[-1] < real_total:
+        values[-1] = real_total
+    labels = [MONTH_ABBR[m - 1] for _, m in months]
+    return values, labels
+
+
 def main():
     user = get_profile_and_calendar()
     repos = user["repositories"]["nodes"]
@@ -142,10 +203,14 @@ def main():
     total_contribs = user["contributionsCollection"]["contributionCalendar"]["totalContributions"]
     months = monthly_totals(weeks)
 
+    issues_closed = fetch_issues_closed()
+    contributors = fetch_contributors_count(repos)
+    stars_monthly, stars_month_labels = stars_last_12_months(repos)
+
     data = {
         "username": user["login"],
         "name": user.get("name") or user["login"],
-        "generated_at": datetime.datetime.utcnow().strftime("%b %d, %Y"),
+        "generated_at": datetime.datetime.utcnow().strftime("%b %d, %Y %H:%M UTC"),
         "stats": {
             "total_repos": user["repositories"]["totalCount"],
             "total_stars": total_stars,
@@ -153,6 +218,8 @@ def main():
             "total_prs": user["contributionsCollection"]["totalPullRequestContributions"],
             "followers": user["followers"]["totalCount"],
             "following": user["following"]["totalCount"],
+            "issues_closed": issues_closed,
+            "contributors": contributors,
         },
         "languages": languages,
         "streak": {
@@ -163,9 +230,12 @@ def main():
         },
         "weeks": weeks,
         "months": months,
+        "stars_monthly": stars_monthly,
+        "stars_month_labels": stars_month_labels,
     }
 
-    with open(os.path.join(os.path.dirname(__file__), "..", "data.json"), "w") as f:
+    out_path = os.path.join(os.path.dirname(__file__), "..", "data.json")
+    with open(out_path, "w") as f:
         json.dump(data, f, indent=2)
 
     print("Wrote data.json")
