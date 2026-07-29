@@ -1,31 +1,33 @@
 {
   "username": "sabawoonrahman942-netizen",
   "name": "FAZL RAHMAN SABAWOON ",
-  "generated_at": "Jul 29, 2026",
+  "generated_at": "Jul 29, 2026 22:18 UTC",
   "stats": {
     "total_repos": 17,
     "total_stars": 35,
-    "total_commits": 111,
+    "total_commits": 112,
     "total_prs": 0,
     "followers": 17,
-    "following": 21
+    "following": 21,
+    "issues_closed": 0,
+    "contributors": 1
   },
   "languages": [
     {
       "name": "Jupyter Notebook",
-      "pct": 60.6
+      "pct": 59.9
     },
     {
       "name": "Java",
-      "pct": 20.1
+      "pct": 19.8
     },
     {
       "name": "TSQL",
-      "pct": 11.6
+      "pct": 11.5
     },
     {
       "name": "Python",
-      "pct": 7.4
+      "pct": 8.4
     },
     {
       "name": "Dockerfile",
@@ -39,7 +41,7 @@
   "streak": {
     "current": 0,
     "longest": 6,
-    "total_contributions": 129,
+    "total_contributions": 130,
     "active_year": 2026
   },
   "weeks": [
@@ -1727,7 +1729,7 @@
         },
         {
           "date": "2026-07-30",
-          "contributionCount": 3
+          "contributionCount": 4
         }
       ]
     }
@@ -1739,11 +1741,39 @@
     24,
     3,
     0,
-    79,
+    80,
     0,
     1,
     13,
     0,
     0
+  ],
+  "stars_monthly": [
+    0,
+    0,
+    8,
+    8,
+    8,
+    8,
+    14,
+    14,
+    23,
+    26,
+    26,
+    35
+  ],
+  "stars_month_labels": [
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul"
   ]
 }
