@@ -1,33 +1,27 @@
 <div align="center">
 
-# 👋 Merhaba, ben Rahman
+# 👋 Hello, I'm Fazl Rahman Sabbawoon
 
-### Software Engineering Student | Backend Developer | Data Engineering Enthusiast
+### Software Engineering Student | Database Engineer | Data Engineering Enthusiast
 
-*"Building reliable backend systems and designing efficient data architectures."*
-
-<br>
-
-<img src="https://komarev.com/ghpvc/?username=KULLANICI_ADIN&style=for-the-badge&color=blue" />
+*"Designing efficient data architectures and building reliable data-driven systems."*
 
 </div>
-
-
----
-
 ## 🚀 About Me
 
-I am a Software Engineering student focused on **backend development, database architecture, and data engineering**.
+I am a Software Engineering student focused on **Database Engineering, Data Architecture, and Data Engineering**.
 
-My main interest is designing systems where software logic, data modeling, and performance optimization work together.
+My main interest is designing efficient data systems by combining database design principles, data modeling, and performance optimization.
 
-I enjoy working with:
+I focus on:
 
-- Relational database design
-- Query optimization
-- Backend API development
-- Data processing pipelines
-- System architecture
+- Relational database architecture
+- SQL optimization
+- Data modeling
+- ETL processes
+- Data pipelines
+- Data warehouse concepts
+- Large-scale data management
 
 
 Currently improving my skills in:
