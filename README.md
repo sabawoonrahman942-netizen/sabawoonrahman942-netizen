@@ -1,5 +1,3 @@
-<!-- English Version -->
-
 <div align="center">
   <a href="https://github.com/KULLANICI_ADIN/KULLANICI_ADIN/blob/main/README.md" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/View_in_English-1E90FF?style=for-the-badge&logo=google-translate&logoColor=white" alt="View in English" />
@@ -83,19 +81,6 @@ Tam ölçekli ilişkisel veritabanı mimarisi projesi.
 
 ### ⚡ Veritabanı Sorgu Optimizasyon Aracı (Java)
 Veritabanı sorgularının çalışma sürelerini analiz eden ve optimizasyon önerileri sunan Java uygulaması.  
-
----
-
-## 📈 GitHub İstatistikleri
-
-<div align="center" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 20px;">
-  <img src="https://github-readme-stats.vercel.app/api?username=KULLANICI_ADIN&show_icons=true&hide_border=true&bg_color=fff0f9&title_color=ab47bc&icon_color=ec407a&text_color=6a1b9a&cache_bust=1" alt="Genel GitHub İstatistikleri" style="height: 170px; border-radius: 15px;" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KULLANICI_ADIN&layout=compact&hide_border=true&bg_color=fff0f9&title_color=ab47bc&text_color=6a1b9a&cache_bust=1" alt="En Çok Kullanılan Diller" style="height: 170px; border-radius: 15px;" />
-</div>
-
-<div align="center" style="margin-top: 30px;">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=KULLANICI_ADIN&theme=pink-panda&hide_border=true" alt="GitHub Aktiflik Serisi" style="height: 190px; border-radius: 15px;" />
-</div>
 
 ---
 
