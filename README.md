@@ -1,98 +1,205 @@
 <div align="center">
 
-  <a href="https://github.com/KULLANICI_ADIN/KULLANICI_ADIN/blob/main/README.md">
-    <img src="https://img.shields.io/badge/Language-English-1E90FF?style=for-the-badge&logo=googletranslate&logoColor=white" alt="English Version" />
-  </a>
+# 👋 Merhaba, ben Rahman
 
-  <h1 align="center">Yazılım Mühendisi & Veri Mimarisi Tutkunu</h1>
+### Software Engineering Student | Backend Developer | Data Engineering Enthusiast
 
-  <p align="center">
-    <em>"Veri mimarisi ve mantığı harmanlayarak ölçeklenebilir, performanslı dijital sistemler inşa ediyorum."</em> 💡
-  </p>
+*"Building reliable backend systems and designing efficient data architectures."*
+
+<br>
+
+<img src="https://komarev.com/ghpvc/?username=KULLANICI_ADIN&style=for-the-badge&color=blue" />
 
 </div>
 
----
-
-### 🚀 Hakkımda
-
-Yazılım Mühendisliği öğrencisi ve backend odaklı bir geliştiriciyim. Kodun yalnızca sözdiziminden ibaret olmadığını; doğru kurgulanmış veritabanı mimarileri, yüksek performanslı sorgu optimizasyonları ve dayanıklı backend servisleriyle anlam kazandığını savunuyorum. Büyük ölçekli ilişkisel sistemler ve uçtan uca mimari geliştirme ana odak alanımı oluşturuyor.
 
 ---
 
-### ⚡ Teknolojiler & Beceriler
+## 🚀 About Me
 
-<p align="center">
-  <a href="https://www.java.com/" target="_blank"><img src="https://skillicons.dev/icons?i=java" height="48" alt="Java"/></a>&nbsp;
-  <a href="https://www.microsoft.com/sql-server" target="_blank"><img src="https://skillicons.dev/icons?i=mssql" height="48" alt="MS SQL"/></a>&nbsp;
-  <a href="https://www.postgresql.org/" target="_blank"><img src="https://skillicons.dev/icons?i=postgresql" height="48" alt="PostgreSQL"/></a>&nbsp;
-  <a href="https://www.mongodb.com/" target="_blank"><img src="https://skillicons.dev/icons?i=mongodb" height="48" alt="MongoDB"/></a>&nbsp;
-  <a href="https://www.php.net/" target="_blank"><img src="https://skillicons.dev/icons?i=php" height="48" alt="PHP"/></a>&nbsp;
-  <a href="https://www.python.org/" target="_blank"><img src="https://skillicons.dev/icons?i=python" height="48" alt="Python"/></a>&nbsp;
-  <a href="https://git-scm.com/" target="_blank"><img src="https://skillicons.dev/icons?i=git" height="48" alt="Git"/></a>&nbsp;
-  <a href="https://docs.docker.com/" target="_blank"><img src="https://skillicons.dev/icons?i=docker" height="48" alt="Docker"/></a>&nbsp;
-  <a href="https://www.linux.org/" target="_blank"><img src="https://skillicons.dev/icons?i=linux" height="48" alt="Linux"/></a>&nbsp;
-  <a href="https://code.visualstudio.com/" target="_blank"><img src="https://skillicons.dev/icons?i=vscode" height="48" alt="VS Code"/></a>
+I am a Software Engineering student focused on **backend development, database architecture, and data engineering**.
+
+My main interest is designing systems where software logic, data modeling, and performance optimization work together.
+
+I enjoy working with:
+
+- Relational database design
+- Query optimization
+- Backend API development
+- Data processing pipelines
+- System architecture
+
+
+Currently improving my skills in:
+
+- Data Engineering workflows
+- Cloud technologies
+- Distributed data systems
+- DevOps practices
+
+
+---
+
+# 🛠️ Tech Stack
+
+
+## Backend Development
+
+<p>
+
+<img src="https://skillicons.dev/icons?i=java,spring,php,python" />
+
 </p>
 
-#### 💻 Teknik Yetkinlik Matrisi
 
-| Teknoloji / Uzmanlık | Odak Alanı ve Mimari Kullanımı | Seviye |
-| :--- | :--- | :---: |
-| **T-SQL & MS SQL Server** | İlişkisel Veritabanı Tasarımı, Stored Procedure, Triggers, Execution Plan & Optimizasyon | ⭐⭐⭐⭐⭐ |
-| **Java** | Backend Geliştirme, Algoritma Mimarisi, Sorgu Optimizasyon Araçları | ⭐⭐⭐⭐☆ |
-| **PHP** | Web Tabanlı Servisler, REST API Entegrasyonu, Veritabanı Mantığı | ⭐⭐⭐⭐☆ |
-| **MongoDB** | Esnek ve Doküman Tabanlı NoSQL Veri Modelleme | ⭐⭐⭐☆☆ |
-| **Python** | Veri Manipülasyonu, Otomasyon Scriptleri, Veri Analizi | ⭐⭐⭐☆☆ |
+## Databases & Data Systems
 
----
+<p>
 
-### 📊 Veri Analizi, Görselleştirme & Mühendislik
+<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb" />
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
-  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI"/>
-  <img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" alt="Spark"/>
-  <img src="https://img.shields.io/badge/Apache_Kafka-000000?style=for-the-badge&logo=apachekafka&logoColor=white" alt="Kafka"/>
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=FF9900" alt="AWS"/>
 </p>
 
+
+## Data Engineering
+
+<p>
+
+<img src="https://skillicons.dev/icons?i=python,apache" />
+
+</p>
+
+
+## Tools & Infrastructure
+
+<p>
+
+<img src="https://skillicons.dev/icons?i=docker,linux,git,github,vscode" />
+
+</p>
+
+
 ---
 
-### ✨ Öne Çıkan Projeler
+# 🧠 Core Skills
 
-* **🚌 Online Otobüs Bilet Rezervasyon Sistemi (`T-SQL` / `MS SQL Server`)**
-  * Hata yönetimi (Transaction), indeksleme stratejileri ve karmaşık `JOIN` sorguları içeren tam ölçekli ilişkisel veritabanı mimarisi.
-  * Çok sütunlu benzersiz kısıtlamalar (`Unique Constraints`), dinamik görünümler (`View`) ve saklı yordamlar (`Stored Procedure`).
 
-* **⚡ Veritabanı Sorgu Optimizasyon Aracı (`Java`)**
-  * Veritabanı sorgularının çalışma sürelerini ve maliyet grafiklerini analiz ederek otomatik optimizasyon önerileri sunan Java uygulaması.
+### Database Engineering
+
+- Advanced SQL querying
+- Database normalization
+- Index optimization
+- Stored Procedures
+- Execution Plan analysis
+- Transaction management
+
+
+### Backend Development
+
+- REST API design
+- Backend architecture
+- Object-oriented programming
+- Algorithm implementation
+- Performance optimization
+
+
+### Data Engineering
+
+- Data processing with Python
+- ETL concepts
+- Data modeling
+- Analytical workflows
+- Big Data ecosystem fundamentals
+
 
 ---
+
+# 📌 Featured Projects
+
+
+## 🚌 Online Bus Reservation System
+
+**Tech:** T-SQL | MS SQL Server
+
+A relational database project focused on real-world transaction management.
+
+Features:
+
+- Database normalization
+- Complex JOIN queries
+- Stored Procedures
+- Views
+- Constraints
+- Transaction management
+- Query optimization
+
+
+---
+
+## ⚡ SQL Query Optimization Analyzer
+
+**Tech:** Java
+
+A tool designed to analyze database queries and provide optimization insights.
+
+Features:
+
+- Query execution analysis
+- Performance comparison
+- Optimization suggestions
+- Database performance monitoring concepts
+
+
+---
+
+# 📊 GitHub Analytics
+
 
 <div align="center">
-  <img src="./assets/dashboard.svg" alt="GitHub Analytics Dashboard" width="100%"/>
+
+<img src="https://github-readme-stats.vercel.app/api?username=KULLANICI_ADIN&show_icons=true&theme=transparent"/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=KULLANICI_ADIN&theme=transparent"/>
+
 </div>
 
+
 ---
 
-### 📬 İletişim
+# 🌱 Currently Learning
+
+- Apache Spark
+- Apache Kafka
+- Cloud Data Platforms
+- CI/CD Pipelines
+- Data Warehouse Architecture
+
+
+---
+
+# 📫 Connect With Me
+
 
 <div align="center">
-  <a href="mailto:E_POSTA_ADRESIN">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-  </a>
-  <a href="https://www.linkedin.com/in/LINKEDIN_KULLANICI_ADI/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://github.com/KULLANICI_ADIN">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
+
+
+<a href="LINKEDIN">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin"/>
+</a>
+
+
+<a href="MAIL">
+<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail"/>
+</a>
+
+
 </div>
 
+
 ---
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/KULLANICI_ADIN/KULLANICI_ADIN/output/github-contribution-grid-snake.svg" alt="GitHub Snake Animation" />
+
+<img src="https://raw.githubusercontent.com/KULLANICI_ADIN/KULLANICI_ADIN/output/github-contribution-grid-snake.svg"/>
+
 </div>
