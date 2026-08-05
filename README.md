@@ -7,193 +7,120 @@
 *"Designing efficient data architectures and building reliable data-driven systems."*
 
 </div>
-## 🚀 About Me
 
-I am a Software Engineering student focused on **Database Engineering, Data Architecture, and Data Engineering**.
+## ⚡ Tech Stack
 
-My main interest is designing efficient data systems by combining database design principles, data modeling, and performance optimization.
+<p align="center">
 
-I focus on:
-
-- Relational database architecture
-- SQL optimization
-- Data modeling
-- ETL processes
-- Data pipelines
-- Data warehouse concepts
-- Large-scale data management
-
-
-Currently improving my skills in:
-
-- Data Engineering workflows
-- Cloud technologies
-- Distributed data systems
-- DevOps practices
-
-
----
-
-# 🛠️ Tech Stack
-
-
-## Backend Development
-
-<p>
-
-<img src="https://skillicons.dev/icons?i=java,spring,php,python" />
-
-</p>
-
-
-## Databases & Data Systems
-
-<p>
-
-<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb" />
-
-</p>
-
-
-## Data Engineering
-
-<p>
-
-<img src="https://skillicons.dev/icons?i=python,apache" />
-
-</p>
-
-
-## Tools & Infrastructure
-
-<p>
-
-<img src="https://skillicons.dev/icons?i=docker,linux,git,github,vscode" />
-
-</p>
-
-
----
-
-# 🧠 Core Skills
-
-
-### Database Engineering
-
-- Advanced SQL querying
-- Database normalization
-- Index optimization
-- Stored Procedures
-- Execution Plan analysis
-- Transaction management
-
-
-### Backend Development
-
-- REST API design
-- Backend architecture
-- Object-oriented programming
-- Algorithm implementation
-- Performance optimization
-
-
-### Data Engineering
-
-- Data processing with Python
-- ETL concepts
-- Data modeling
-- Analytical workflows
-- Big Data ecosystem fundamentals
-
-
----
-
-# 📌 Featured Projects
-
-
-## 🚌 Online Bus Reservation System
-
-**Tech:** T-SQL | MS SQL Server
-
-A relational database project focused on real-world transaction management.
-
-Features:
-
-- Database normalization
-- Complex JOIN queries
-- Stored Procedures
-- Views
-- Constraints
-- Transaction management
-- Query optimization
-
-
----
-
-## ⚡ SQL Query Optimization Analyzer
-
-**Tech:** Java
-
-A tool designed to analyze database queries and provide optimization insights.
-
-Features:
-
-- Query execution analysis
-- Performance comparison
-- Optimization suggestions
-- Database performance monitoring concepts
-
-
----
-
-# 📊 GitHub Analytics
-
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=KULLANICI_ADIN&show_icons=true&theme=transparent"/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=KULLANICI_ADIN&theme=transparent"/>
-
-</div>
-
-
----
-
-# 🌱 Currently Learning
-
-- Apache Spark
-- Apache Kafka
-- Cloud Data Platforms
-- CI/CD Pipelines
-- Data Warehouse Architecture
-
-
----
-
-# 📫 Connect With Me
-
-
-<div align="center">
-
-
-<a href="LINKEDIN">
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin"/>
+<a href="https://www.python.org/" target="_blank">
+<img src="https://skillicons.dev/icons?i=python" height="55"/>
 </a>
 
-
-<a href="MAIL">
-<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail"/>
+<a href="https://dev.mysql.com/doc/" target="_blank">
+<img src="https://skillicons.dev/icons?i=mysql" height="55"/>
 </a>
 
+<a href="https://www.postgresql.org/docs/" target="_blank">
+<img src="https://skillicons.dev/icons?i=postgresql" height="55"/>
+</a>
 
-</div>
+<a href="https://www.mongodb.com/docs/" target="_blank">
+<img src="https://skillicons.dev/icons?i=mongodb" height="55"/>
+</a>
 
+<a href="https://git-scm.com/doc" target="_blank">
+<img src="https://skillicons.dev/icons?i=git" height="55"/>
+</a>
+
+<a href="https://docs.github.com/" target="_blank">
+<img src="https://skillicons.dev/icons?i=github" height="55"/>
+</a>
+
+<a href="https://docs.docker.com/" target="_blank">
+<img src="https://skillicons.dev/icons?i=docker" height="55"/>
+</a>
+
+<a href="https://aws.amazon.com/documentation/" target="_blank">
+<img src="https://skillicons.dev/icons?i=aws" height="55"/>
+</a>
+
+<a href="https://www.linux.org/pages/download/" target="_blank">
+<img src="https://skillicons.dev/icons?i=linux" height="55"/>
+</a>
+
+<a href="https://code.visualstudio.com/docs" target="_blank">
+<img src="https://skillicons.dev/icons?i=vscode" height="55"/>
+</a>
+
+</p>
 
 ---
 
-<div align="center">
+<p align="center">
 
-<img src="https://raw.githubusercontent.com/KULLANICI_ADIN/KULLANICI_ADIN/output/github-contribution-grid-snake.svg"/>
+<a href="https://pandas.pydata.org/docs/">
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+</a>
 
-</div>
+<a href="https://numpy.org/doc/">
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+</a>
+
+<a href="https://matplotlib.org/stable/">
+<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge"/>
+</a>
+
+<a href="https://seaborn.pydata.org/">
+<img src="https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge"/>
+</a>
+
+<a href="https://plotly.com/python/">
+<img src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white"/>
+</a>
+
+<a href="https://learn.microsoft.com/power-bi/">
+<img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
+</a>
+
+<a href="https://help.tableau.com/">
+<img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white"/>
+</a>
+
+</p>
+
+
+
+## ⚙️ Data Engineering
+
+<p align="center">
+
+<a href="https://spark.apache.org/docs/latest/">
+<img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white"/>
+</a>
+
+<a href="https://airflow.apache.org/docs/">
+<img src="https://img.shields.io/badge/Apache_Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white"/>
+</a>
+
+<a href="https://kafka.apache.org/documentation/">
+<img src="https://img.shields.io/badge/Apache_Kafka-000000?style=for-the-badge&logo=apachekafka&logoColor=white"/>
+</a>
+
+<a href="https://docs.aws.amazon.com/">
+<img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=FF9900"/>
+</a>
+
+<a href="https://learn.microsoft.com/azure/data-factory/">
+<img src="https://img.shields.io/badge/Azure_Data_Factory-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white"/>
+</a>
+
+<a href="https://cloud.google.com/bigquery/docs">
+<img src="https://img.shields.io/badge/BigQuery-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white"/>
+</a>
+
+</p>  
+---
+
+<p align="center">
+  <img src="./assets/dashboard.svg" alt="GitHub Analytics dashboard" width="100%"/>
+</p>
