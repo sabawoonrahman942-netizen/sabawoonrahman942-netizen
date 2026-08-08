@@ -1,7 +1,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Cairo+Play&size=50&duration=3000&pause=3000&color=838FF7&background=FFFFFF00&center=true&vCenter=true&width=900&height=100&lines=-+Hi%2C+I'm+Fazl+Rahman+Sabawoon+-;-+Software+Engineering+Student+-;-+Focused+on+Learning+-" />
+<img src="https://readme-typing-svg.demolab.com?font=Cairo+Play&size=50&duration=3000&pause=3000&color=838FF7&background=FFFFFF00&center=true&vCenter=true&width=900&height=100&lines=-+Hi%2C+I'm+Fazl+Rahman+Sabawoon+-;-+Software+Engineering+Student+-" />
 
 ### Software Engineering Student | Database Engineer | Data Engineering Enthusiast
 
