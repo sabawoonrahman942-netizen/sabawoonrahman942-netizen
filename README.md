@@ -1,4 +1,17 @@
-[Hi%2C+Fazl+Rahman+Sabawoon+](https://readme-typing-svg.demolab.com?font=Cairo+Play&size=50&duration=3000&pause=3000&color=838FF7&background=FFFFFF00&center=true&vCenter=true&width=900&height=100&lines=-+Hi%2C+Fazl+Rahman+Sabawoon+-;-+Software+Engineering+Student+-;-+Focued+on+Interest+Learning+-)
+```html
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com/?font=Cairo+Play&size=50&duration=3000&pause=3000&color=838FF7&background=FFFFFF00&center=true&vCenter=true&width=900&height=100&lines=-+Hi%2C+Fazl+Rahman+Sabawoon+-;-+Software+Engineering+Student+-;-+Focused+on+Interest+Learning+-" />
+</p>
+
+<h3 align="center">
+  Software Engineering Student | Database Engineer | Data Engineering Enthusiast
+</h3>
+
+<p align="center">
+  <i>Designing efficient data architectures and building reliable data-driven systems.</i>
+</p>
+```
+
 
 <div align="center">
 
