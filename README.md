@@ -1,3 +1,6 @@
+<img src="https://readme-typing-svg.demolab.com?font=Cairo+Play&size=50&duration=3000&pause=3000&color=838FF7&background=FFFFFF00&center=true&vCenter=true&width=900&height=100&lines=-+Hi%2C+Im+YangZhiHang+-;-+Computer+Science+Student+-;-+Focued+on+Interest+Learning+-"/>
+
+
 <div align="center">
 
 # 👋 Hello, I'm Fazl Rahman Sabbawoon
