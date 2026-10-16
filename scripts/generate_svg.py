@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 """
-Turns data.json into assets/dashboard.svg, styled like the new
-reference dashboard image (stat cards + sparklines, GitHub Score ring,
-contribution heatmap, language donut, stars-over-time chart, Tech
-Stack panel and footer bar).
+Turns current GitHub API data in data.json into the profile analytics SVG.
 """
 
 import json
@@ -31,37 +28,6 @@ def esc(s):
 
 # ------------------------------------------------------------- widgets ---
 
-def sparkline(x, y, w, h, values, color):
-    values = values or [0]
-    if max(values) == 0:
-        values = [1] * len(values)
-    mn, mx = min(values), max(values)
-    rng = (mx - mn) or 1
-    pts = []
-    for i, v in enumerate(values):
-        px = x + i * (w / (len(values) - 1 or 1))
-        py = y + h - ((v - mn) / rng) * h
-        pts.append((px, py))
-    poly = " ".join(f"{px:.1f},{py:.1f}" for px, py in pts)
-    area = f"{pts[0][0]:.1f},{y+h:.1f} " + poly + f" {pts[-1][0]:.1f},{y+h:.1f}"
-    return (
-        f'<polygon points="{area}" fill="{color}" opacity="0.15"/>'
-        f'<polyline points="{poly}" fill="none" stroke="{color}" stroke-width="2"/>'
-    )
-
-
-def score_ring(cx, cy, r, pct, grade, color="#eab308"):
-    circumference = 2 * math.pi * r
-    dash = circumference * pct / 100
-    return (
-        f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{BORDER}" stroke-width="9"/>'
-        f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{color}" stroke-width="9" '
-        f'stroke-linecap="round" stroke-dasharray="{dash:.1f} {circumference:.1f}" '
-        f'transform="rotate(-90 {cx} {cy})"/>'
-        f'<text x="{cx}" y="{cy+9}" font-size="26" font-weight="700" fill="{TEXT}" text-anchor="middle">{grade}</text>'
-    )
-
-
 def donut(cx, cy, r_outer, r_inner, languages):
     parts, angle = [], -90.0
     for i, lang in enumerate(languages):
@@ -80,7 +46,7 @@ def donut(cx, cy, r_outer, r_inner, languages):
     return "".join(parts)
 
 
-def heatmap(weeks, x, y, cell=11, gap=3, n_weeks=52):
+def heatmap(weeks, x, y, cell=8, gap=2, n_weeks=52):
     recent = weeks[-n_weeks:]
     svg = []
     month_labels = []
@@ -104,7 +70,7 @@ def heatmap(weeks, x, y, cell=11, gap=3, n_weeks=52):
     day_labels = ["", "Mon", "", "Wed", "", "Fri", ""]
     for di, lbl in enumerate(day_labels):
         if lbl:
-            svg.append(f'<text x="{x-45}" y="{y+di*(cell+gap)+9}" font-size="10" fill="{MUTED}">{lbl}</text>')
+            svg.append(f'<text x="{x-35}" y="{y+di*(cell+gap)+9}" font-size="10" fill="{MUTED}">{lbl}</text>')
     return "".join(svg)
 
 
@@ -132,42 +98,6 @@ def line_chart(x, y, w, h, values, labels, color=VIOLET):
 
 # ---------------------------------------------------------- score/trend ---
 
-def compute_score(stats):
-    raw = (
-        min(stats["total_stars"], 500) / 500 * 35
-        + min(stats["total_repos"], 100) / 100 * 20
-        + min(stats["total_prs"], 200) / 200 * 20
-        + min(stats["followers"], 200) / 200 * 15
-        + min(stats["contributors"], 30) / 30 * 10
-    )
-    return max(1, min(100, round(raw)))
-
-
-def grade_from_score(score):
-    if score >= 90: return "A+"
-    if score >= 80: return "A"
-    if score >= 70: return "B+"
-    if score >= 60: return "B"
-    if score >= 45: return "C"
-    return "D"
-
-
-def simple_trend(total, points=12, seed=1.0):
-    """Toplam bir sayidan gorsel olarak makul, artan bir egilim serisi turetir.
-    Aylik kirilim GitHub API'sinde bazi metrikler icin (PR/issue) ucretsiz
-    alinamadigindan bu bir yaklasimdir; toplam deger gercek ve dogrudur."""
-    if total <= 0:
-        return [0] * points
-    weights = [0.4 + 0.6 * (i / (points - 1)) + 0.15 * math.sin(i * seed) for i in range(points)]
-    s = sum(weights)
-    acc, out = 0, []
-    for wgt in weights:
-        acc += total * wgt / s
-        out.append(round(acc))
-    out[-1] = total
-    return out
-
-
 TECH_CATEGORIES = [
     {"title": "Development", "icon": "💻", "color": "#a78bfa", "tools": [
         {"name": "Python", "icon": "🐍"}, {"name": "Git", "icon": "🔶"}, {"name": "GitHub", "icon": "🐙"},
@@ -194,10 +124,6 @@ TECH_CATEGORIES = [
 def build(data):
     stats = data["stats"]
     languages = data["languages"]
-    score = compute_score(stats)
-    grade = grade_from_score(score)
-    score_label = "Excellent" if score >= 80 else "Good" if score >= 60 else "Growing"
-
     s = []
     A = s.append
 
@@ -215,30 +141,26 @@ def build(data):
     A(f'<defs><linearGradient id="hgrad" x1="0" y1="0" x2="1" y2="0">'
       f'<stop offset="0" stop-color="{VIOLET}"/><stop offset="1" stop-color="#3b82f6"/></linearGradient></defs>')
 
-    # ---- 6 stat cards ----
+    # ---- 6 live stat cards ----
     row1_y = header_h + 25
-    card_w, card_h, gap = 240, 175, 16
+    gap = 14
+    card_w, card_h = (WIDTH - 80 - gap * 5) / 6, 140
     stat_defs = [
-        ("⭐", "#a78bfa", "Total Stars Earned", stats["total_stars"], simple_trend(stats["total_stars"], seed=1.1)),
-        ("&lt;/&gt;", "#60a5fa", "Total Commits", stats["total_commits"], simple_trend(stats["total_commits"], seed=0.9)),
-        ("🔀", "#4ade80", "Total PRs", stats["total_prs"], simple_trend(stats["total_prs"], seed=1.3)),
-        ("🐛", "#fb923c", "Issues Closed", stats["issues_closed"], simple_trend(stats["issues_closed"], seed=0.7)),
-        ("👥", "#2dd4bf", "Contributors", stats["contributors"], simple_trend(stats["contributors"], seed=1.6)),
-        (None, None, None, None, None),  # score card
+        ("⭐", "#a78bfa", "Stars", stats["total_stars"], "across owned public repos"),
+        ("&lt;/&gt;", "#60a5fa", "Commits (12 mo)", stats["total_commits"], "contribution count"),
+        ("🔀", "#4ade80", "PRs (12 mo)", stats["total_prs"], "contribution count"),
+        ("🐛", "#fb923c", "Closed issues", stats["issues_closed"], "opened by this profile"),
+        ("📦", "#2dd4bf", "Repositories", stats["total_repos"], "owned, excluding forks"),
+        ("👥", "#f472b6", "Followers", stats["followers"], "current public profile"),
     ]
-    for i, (icon, color, label, value, trend) in enumerate(stat_defs):
+    for i, (icon, color, label, value, detail) in enumerate(stat_defs):
         cx0 = 40 + i * (card_w + gap)
         card(cx0, row1_y, card_w, card_h)
-        if icon is None:
-            A(f'<text x="{cx0+22}" y="{row1_y+34}" font-size="14" font-weight="600" fill="{TEXT}">🏆 GitHub Score</text>')
-            A(score_ring(cx0 + card_w / 2, row1_y + 105, 45, score, grade))
-            A(f'<text x="{cx0+card_w/2}" y="{row1_y+card_h-14}" font-size="12" font-weight="600" fill="#eab308" text-anchor="middle">{score_label}</text>')
-            continue
-        A(f'<circle cx="{cx0+30}" cy="{row1_y+32}" r="18" fill="{color}22"/>')
-        A(f'<text x="{cx0+30}" y="{row1_y+38}" font-size="15" fill="{color}" text-anchor="middle">{icon}</text>')
-        A(f'<text x="{cx0+58}" y="{row1_y+28}" font-size="13" fill="{MUTED}">{esc(label)}</text>')
-        A(f'<text x="{cx0+58}" y="{row1_y+60}" font-size="26" font-weight="700" fill="{TEXT}">{value:,}</text>')
-        A(sparkline(cx0 + 18, row1_y + 100, card_w - 36, 55, trend, color))
+        A(f'<circle cx="{cx0+29}" cy="{row1_y+30}" r="18" fill="{color}22"/>')
+        A(f'<text x="{cx0+29}" y="{row1_y+36}" font-size="15" fill="{color}" text-anchor="middle">{icon}</text>')
+        A(f'<text x="{cx0+54}" y="{row1_y+34}" font-size="13" fill="{MUTED}">{esc(label)}</text>')
+        A(f'<text x="{cx0+20}" y="{row1_y+82}" font-size="27" font-weight="700" fill="{TEXT}">{value:,}</text>')
+        A(f'<text x="{cx0+20}" y="{row1_y+110}" font-size="10.5" fill="{MUTED}">{esc(detail)}</text>')
 
     # ---- row 2 ----
     row2_y = row1_y + card_h + 20
@@ -246,14 +168,14 @@ def build(data):
 
     heat_w = 560
     card(40, row2_y, heat_w, row2_h)
-    A(f'<text x="60" y="{row2_y+32}" font-size="15" font-weight="600" fill="{TEXT}">🔥 Contribution Activity</text>')
-    A(heatmap(data["weeks"], x=105, y=row2_y + 55))
+    A(f'<text x="60" y="{row2_y+32}" font-size="15" font-weight="600" fill="{TEXT}">🔥 Contribution Activity (12 months)</text>')
+    A(heatmap(data["weeks"], x=76, y=row2_y + 55))
     A(f'<text x="60" y="{row2_y+row2_h-20}" font-size="12" fill="#4ade80">🔥 Current streak: {data["streak"]["current"]} days</text>')
-    A(f'<text x="{40+heat_w-190}" y="{row2_y+row2_h-20}" font-size="12" fill="{MUTED}">Longest streak: {data["streak"]["longest"]} days</text>')
+    A(f'<text x="{40+heat_w-190}" y="{row2_y+row2_h-20}" font-size="12" fill="{MUTED}">Longest streak (12 mo): {data["streak"]["longest"]} days</text>')
 
     lang_x, lang_w = 40 + heat_w + 16, 430
     card(lang_x, row2_y, lang_w, row2_h)
-    A(f'<text x="{lang_x+20}" y="{row2_y+32}" font-size="15" font-weight="600" fill="{TEXT}">&lt;/&gt; Languages by Commit</text>')
+    A(f'<text x="{lang_x+20}" y="{row2_y+32}" font-size="15" font-weight="600" fill="{TEXT}">&lt;/&gt; Languages by Repository Size</text>')
     A(donut(lang_x + 95, row2_y + 140, 68, 40, languages))
     ly = row2_y + 65
     for i, lang in enumerate(languages):
@@ -266,8 +188,8 @@ def build(data):
     stars_x = lang_x + lang_w + 16
     stars_w = WIDTH - stars_x - 40
     card(stars_x, row2_y, stars_w, row2_h)
-    A(f'<text x="{stars_x+20}" y="{row2_y+32}" font-size="15" font-weight="600" fill="{TEXT}">⭐ Stars Earned (Last 12 Months)</text>')
-    A(line_chart(stars_x + 45, row2_y + 55, stars_w - 80, row2_h - 110, data["stars_monthly"], data["stars_month_labels"]))
+    A(f'<text x="{stars_x+20}" y="{row2_y+32}" font-size="15" font-weight="600" fill="{TEXT}">📈 Contributions by Month (Last 12 Months)</text>')
+    A(line_chart(stars_x + 45, row2_y + 55, stars_w - 80, row2_h - 110, data["activity_monthly"], data["activity_month_labels"]))
 
     # ---- Tech Stack ----
     ts_y = row2_y + row2_h + 30
@@ -295,9 +217,9 @@ def build(data):
     # ---- footer ----
     footer_y = ts_cards_y + ts_h + 30
     A(f'<line x1="40" y1="{footer_y}" x2="{WIDTH-40}" y2="{footer_y}" stroke="{BORDER}"/>')
-    A(f'<text x="40" y="{footer_y+30}" font-size="12" fill="{MUTED}">🌐 Data is fetched live from GitHub API</text>')
-    A(f'<text x="440" y="{footer_y+30}" font-size="12" fill="{MUTED}">⏱ Auto-updated every 30 minutes</text>')
-    A(f'<text x="780" y="{footer_y+30}" font-size="12" fill="{MUTED}">🌍 Last update: {esc(data["generated_at"])}</text>')
+    A(f'<text x="40" y="{footer_y+30}" font-size="12" fill="{MUTED}">🌐 Source: GitHub GraphQL and REST APIs</text>')
+    A(f'<text x="440" y="{footer_y+30}" font-size="12" fill="{MUTED}">⏱ Refresh schedule: every 30 minutes</text>')
+    A(f'<text x="780" y="{footer_y+30}" font-size="12" fill="{MUTED}">🌍 Last successful fetch: {esc(data["generated_at"])}</text>')
     A(f'<rect x="{WIDTH-260}" y="{footer_y+6}" width="220" height="34" rx="8" fill="none" stroke="{VIOLET}"/>')
     A(f'<text x="{WIDTH-150}" y="{footer_y+28}" font-size="12" fill="{VIOLET}" text-anchor="middle">💜 Thanks for visiting!</text>')
 

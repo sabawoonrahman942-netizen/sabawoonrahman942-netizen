@@ -4,9 +4,8 @@ Fetches real, live data from the GitHub API for a given user and
 writes it to data.json, which generate_svg.py then turns into the
 dashboard image.
 
-Requires an environment variable GH_TOKEN with a token that has at
-least these scopes: read:user, public_repo (repo if you want private
-repos counted too).
+Requires GH_TOKEN. GitHub Actions supplies its short-lived repository
+token; local runs should use a token authorized to read the public profile.
 """
 
 import os
@@ -44,7 +43,7 @@ def rest_get(path, params=None):
 
 def get_profile_and_calendar():
     query = """
-    query($login: String!) {
+    query($login: String!, $from: DateTime!, $to: DateTime!) {
       user(login: $login) {
         login
         name
@@ -59,13 +58,13 @@ def get_profile_and_calendar():
             stargazerCount
             createdAt
             primaryLanguage { name }
-            languages(first: 5, orderBy: {field: SIZE, direction: DESC}) {
+            languages(first: 100, orderBy: {field: SIZE, direction: DESC}) {
               edges { size node { name } }
             }
           }
         }
         pullRequests { totalCount }
-        contributionsCollection {
+        contributionsCollection(from: $from, to: $to) {
           totalCommitContributions
           totalPullRequestContributions
           contributionCalendar {
@@ -78,7 +77,14 @@ def get_profile_and_calendar():
       }
     }
     """
-    return gql(query, {"login": USERNAME})["user"]
+    now = datetime.datetime.now(datetime.timezone.utc)
+    to_date = now.isoformat(timespec="seconds").replace("+00:00", "Z")
+    from_date = (now - datetime.timedelta(days=365)).isoformat(timespec="seconds").replace("+00:00", "Z")
+    result = gql(query, {"login": USERNAME, "from": from_date, "to": to_date})
+    user = result.get("user")
+    if user is None:
+        raise RuntimeError(f"GitHub user not found: {USERNAME}")
+    return user
 
 
 def compute_streaks(weeks):
@@ -105,6 +111,8 @@ def compute_streaks(weeks):
         d = datetime.date.fromisoformat(date_str)
         if d > today:
             continue
+        if d == today and count == 0 and running == 0:
+            continue
         if count > 0:
             running += 1
         else:
@@ -113,13 +121,25 @@ def compute_streaks(weeks):
     return current, longest
 
 
-def monthly_totals(weeks):
-    totals = [0] * 12
-    for w in weeks:
-        for d in w["contributionDays"]:
-            month = int(d["date"][5:7]) - 1
-            totals[month] += d["contributionCount"]
-    return totals
+def monthly_activity(weeks):
+    """Return exact contribution counts grouped into the last 12 calendar months."""
+    month_start = datetime.date.today().replace(day=1)
+    month_keys = []
+    for _ in range(12):
+        month_keys.append((month_start.year, month_start.month))
+        month_start = (month_start - datetime.timedelta(days=1)).replace(day=1)
+    month_keys.reverse()
+
+    totals = {f"{year}-{month:02d}": 0 for year, month in month_keys}
+    for week in weeks:
+        for day in week["contributionDays"]:
+            key = day["date"][:7]
+            if key in totals:
+                totals[key] += day["contributionCount"]
+
+    values = [totals[f"{year}-{month:02d}"] for year, month in month_keys]
+    labels = [f"{MONTH_ABBR[month - 1]} {year % 100:02d}" for year, month in month_keys]
+    return values, labels
 
 
 def fetch_issues_closed():
@@ -131,49 +151,7 @@ def fetch_issues_closed():
         return 0
 
 
-def fetch_contributors_count(repos, limit=6):
-    """En cok yildizli ilk N reponun benzersiz katkicilarini toplar (API maliyetini sinirlamak icin)."""
-    top = sorted(repos, key=lambda r: r["stargazerCount"], reverse=True)[:limit]
-    seen = set()
-    for r in top:
-        try:
-            contributors = rest_get(f"/repos/{USERNAME}/{r['name']}/contributors", {"per_page": 100})
-            for c in contributors:
-                if isinstance(c, dict) and c.get("login"):
-                    seen.add(c["login"])
-        except Exception:
-            continue
-    return max(len(seen), 1)
-
-
 MONTH_ABBR = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-
-
-def stars_last_12_months(repos):
-    """Son 12 ay icin kumulatif yildiz tahmini (repo olusturulma tarihine gore agirlikli).
-    GitHub'da gercek 'star history' endpoint'i olmadigi icin bu bir yaklasimdir;
-    toplam yildiz sayisi gercek ve dogrudur, aylik dagilim yaklasiktir."""
-    now = datetime.datetime.utcnow()
-    months = []
-    for i in range(11, -1, -1):
-        idx = now.month - i
-        y = now.year + (idx - 1) // 12
-        m = (idx - 1) % 12 + 1
-        months.append((y, m))
-    buckets = {f"{y}-{m:02d}": 0 for y, m in months}
-    for r in sorted(repos, key=lambda r: r["createdAt"]):
-        created = r["createdAt"][:7]
-        if created in buckets:
-            buckets[created] += r["stargazerCount"]
-    running, values = 0, []
-    for y, m in months:
-        running += buckets[f"{y}-{m:02d}"]
-        values.append(running)
-    real_total = sum(r["stargazerCount"] for r in repos)
-    if values and values[-1] < real_total:
-        values[-1] = real_total
-    labels = [MONTH_ABBR[m - 1] for _, m in months]
-    return values, labels
 
 
 def main():
@@ -201,16 +179,14 @@ def main():
     weeks = user["contributionsCollection"]["contributionCalendar"]["weeks"]
     current_streak, longest_streak = compute_streaks(weeks)
     total_contribs = user["contributionsCollection"]["contributionCalendar"]["totalContributions"]
-    months = monthly_totals(weeks)
+    activity_monthly, activity_month_labels = monthly_activity(weeks)
 
     issues_closed = fetch_issues_closed()
-    contributors = fetch_contributors_count(repos)
-    stars_monthly, stars_month_labels = stars_last_12_months(repos)
 
     data = {
         "username": user["login"],
         "name": user.get("name") or user["login"],
-        "generated_at": datetime.datetime.utcnow().strftime("%b %d, %Y %H:%M UTC"),
+        "generated_at": datetime.datetime.now(datetime.timezone.utc).strftime("%b %d, %Y %H:%M UTC"),
         "stats": {
             "total_repos": user["repositories"]["totalCount"],
             "total_stars": total_stars,
@@ -219,7 +195,6 @@ def main():
             "followers": user["followers"]["totalCount"],
             "following": user["following"]["totalCount"],
             "issues_closed": issues_closed,
-            "contributors": contributors,
         },
         "languages": languages,
         "streak": {
@@ -229,9 +204,8 @@ def main():
             "active_year": datetime.date.today().year,
         },
         "weeks": weeks,
-        "months": months,
-        "stars_monthly": stars_monthly,
-        "stars_month_labels": stars_month_labels,
+        "activity_monthly": activity_monthly,
+        "activity_month_labels": activity_month_labels,
     }
 
     out_path = os.path.join(os.path.dirname(__file__), "..", "data.json")

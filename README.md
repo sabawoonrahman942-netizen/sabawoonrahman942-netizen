@@ -119,7 +119,16 @@
 
 </p>  
 ---
+## 📊 GitHub Analytics
 
 <p align="center">
-  <img src="./assets/dashboard.svg" alt="GitHub Analytics dashboard" width="100%"/>
+  <img src="./assets/dashboard.svg" alt="GitHub analytics dashboard, refreshed automatically from GitHub" width="100%"/>
+</p>
+
+<p align="center">
+  Stats refresh on a 30-minute schedule. The timestamp in the dashboard shows the latest successful data fetch; GitHub Actions may occasionally delay scheduled runs.
+  <br/>
+  <a href="https://github.com/sabawoonrahman942-netizen/sabawoonrahman942-netizen/actions/workflows/update-dashboard.yml">
+    <img src="https://github.com/sabawoonrahman942-netizen/sabawoonrahman942-netizen/actions/workflows/update-dashboard.yml/badge.svg?branch=main" alt="Analytics refresh workflow status"/>
+  </a>
 </p>

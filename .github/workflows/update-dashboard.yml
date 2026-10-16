@@ -2,7 +2,7 @@ name: Update GitHub Analytics Dashboard
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # every 6 hours
+    - cron: "17,47 * * * *"   # refresh twice an hour, away from the hour boundary
   workflow_dispatch: {}       # lets you trigger it manually from the Actions tab
   push:
     branches: [main]
@@ -27,7 +27,7 @@ jobs:
 
       - name: Fetch live GitHub data
         env:
-          GH_TOKEN: ${{ secrets.STATS_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
           GH_USERNAME: sabawoonrahman942-netizen
         run: python scripts/fetch_stats.py
 
