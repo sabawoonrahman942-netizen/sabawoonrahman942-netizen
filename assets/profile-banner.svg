@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="title desc">
+  <title id="title">Fazl Rahman Sabawoon</title>
+  <desc id="desc">Software engineering, database systems, and data engineering.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="58%" stop-color="#111a32"/>
+      <stop offset="100%" stop-color="#241b45"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#61dafb"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity=".32"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#a5b4fc" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="330" rx="28" fill="url(#background)"/>
+  <rect width="1200" height="330" rx="28" fill="url(#grid)"/>
+  <circle cx="1030" cy="165" r="230" fill="url(#glow)"/>
+  <path d="M730 45C830 105 820 245 940 285M790 22C890 95 890 235 1015 305M870 12C960 85 965 220 1090 284" fill="none" stroke="#a78bfa" stroke-opacity=".16" stroke-width="2"/>
+  <rect x="70" y="68" width="74" height="5" rx="3" fill="url(#accent)"/>
+  <text x="70" y="108" fill="#a5b4fc" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3">SOFTWARE ENGINEERING · DATABASES · DATA</text>
+  <text x="70" y="174" fill="#f8fafc" font-family="Segoe UI,Arial,sans-serif" font-size="46" font-weight="700">Fazl Rahman Sabawoon</text>
+  <text x="70" y="218" fill="#cbd5e1" font-family="Segoe UI,Arial,sans-serif" font-size="20">Building with data, databases, and thoughtful software.</text>
+  <g transform="translate(928 77)">
+    <rect width="205" height="176" rx="22" fill="#10182b" fill-opacity=".78" stroke="#a78bfa" stroke-opacity=".35"/>
+    <ellipse cx="102" cy="52" rx="53" ry="20" fill="#182742" stroke="#61dafb" stroke-opacity=".8" stroke-width="2"/>
+    <path d="M49 52v62c0 12 24 22 53 22s53-10 53-22V52" fill="#182742" stroke="#61dafb" stroke-opacity=".8" stroke-width="2"/>
+    <ellipse cx="102" cy="83" rx="53" ry="20" fill="none" stroke="#61dafb" stroke-opacity=".65" stroke-width="2"/>
+    <ellipse cx="102" cy="114" rx="53" ry="20" fill="#182742" stroke="#61dafb" stroke-opacity=".8" stroke-width="2"/>
+    <circle cx="32" cy="51" r="5" fill="#61dafb"/>
+    <circle cx="173" cy="114" r="5" fill="#a78bfa"/>
+    <path d="M32 51h16M155 114h18" stroke="url(#accent)" stroke-width="2"/>
+  </g>
+  <circle cx="1134" cy="72" r="4" fill="#61dafb"/>
+  <circle cx="874" cy="270" r="4" fill="#a78bfa"/>
+</svg>
