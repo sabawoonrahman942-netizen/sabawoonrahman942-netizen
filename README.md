@@ -119,7 +119,6 @@
 
 </p>  
 ---
-## 📊 GitHub Analytics
 
 <p align="center">
   <img src="./assets/dashboard.svg" alt="GitHub analytics dashboard, refreshed automatically from GitHub" width="100%"/>
